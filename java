@@ -2,13 +2,12 @@ public class CreditCardValidator {
     public static boolean validateCreditCard(String cardNumber) {
         // Remove non-numeric characters
         String cleanCardNumber = cardNumber.replaceAll("[^0-9]", "");
-
-        // Check if the number is of valid length:
+        // Check if the number is of valid length.
         if (cleanCardNumber.length() < 13 || cleanCardNumber.length() > 19) {
             return false;
         }
 
-        // Reverse the number
+        // Reverse the number.
         StringBuilder reversedNum = new StringBuilder(cleanCardNumber).reverse();
 
         // Double every second digit
