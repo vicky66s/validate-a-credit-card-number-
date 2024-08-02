@@ -2,7 +2,7 @@ public class CreditCardValidator {
     public static boolean validateCreditCard(String cardNumber) {
         // Remove non-numeric characters
         String cleanCardNumber = cardNumber.replaceAll("[^0-9]", "");
-        // Check if the number is of valid length.985
+        // Check if the number is of valid length.9
         if (cleanCardNumber.length() < 13 || cleanCardNumber.length() > 19) {
             return false;
         }
