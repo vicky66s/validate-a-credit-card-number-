@@ -1,4 +1,4 @@
-// 0000000000000
+// 01
 public class CreditCardValidator {
     public static boolean validateCreditCard(String cardNumber) {
         // Remove non-numeric characters
